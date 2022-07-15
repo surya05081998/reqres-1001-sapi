@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>efd9fad2-abaa-4e27-81de-c33346a1841a</groupId>
+  <artifactId>reqres-1001-sapi</artifactId>
+  <version>1.0.0</version>
+  <name>reqres-1001-sapi</name>
+  <properties>
+    <classifier>raml</classifier>
+    <main>reqres-1001-sapi.raml</main>
+    <status>published</status>
+    <originalFormatVersion>1.0</originalFormatVersion>
+    <apiVersion>1.0</apiVersion>
+    <projectId>e5299bfe-2e9e-44b4-ba69-12a152ec36e5</projectId>
+    <branchId>master</branchId>
+    <commitId>0ce4c216d7403570f1528bf7b878283f28a28c12</commitId>
+    <keywords/>
+    <type>rest-api</type>
+    <mainFile>reqres-1001-sapi.raml</mainFile>
+  </properties>
+  <repositories>
+    <repository>
+      <id>anypoint-exchange</id>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+    </repository>
+  </repositories>
+</project>

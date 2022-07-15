@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<sub-flow name="getUsers_Implementation_SubFlow" doc:id="bc504653-fc1f-41bd-a2b0-0676d2c51bb1" >
+		<logger level="INFO" doc:name="Info: getUsersFlow Start Logger" doc:id="ab7a25e4-d890-44f8-b152-6ca26552a1c2" message="getUsersFlow started"/>
+		<http:request method="GET" doc:name="Reqres URL Requestor" doc:id="910df2f5-dae5-42eb-8dc8-9a856c3eb473" url="https://reqres.in/api/users"/>
+		<logger level="INFO" doc:name="getUsersFlow End Logger" doc:id="b0cb0ad9-b152-4cc6-81bf-1638d644a68a" message="getUsersFlow Ended"/>
+	</sub-flow>
+</mule>

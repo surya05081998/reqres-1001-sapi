@@ -1,0 +1,16 @@
+%dw 2.0
+
+type auto_bc504653_fc1f_41bd_a2b0_0676d2c51bb1_Output_Payload = {
+  per_page: Number, 
+  total: Number, 
+  data: Array<{    last_name: String,     id: Number,     avatar: String,     first_name: String,     email: String,     _?: Any  }>, 
+  page: Number, 
+  total_pages: Number, 
+  support: {
+    text: String, 
+    url: String, 
+    _?: Any
+  }, 
+  _?: Any
+}
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<sub-flow name="getUserId_implementationFlowSubFlow" doc:id="3e65cf54-7da1-4ee0-86cc-5800bacc38c7" >
+		<logger level="INFO" doc:name="getUserId Start Logger" doc:id="a6663aa6-ff58-4563-bdec-5b71ba836930" message="getUserId implementation flow Started"/>
+		<set-variable value="#[attributes.uriParams.'userId']" doc:name="Set userId Variable" doc:id="5cc459db-23cf-41d0-b420-077565cfb778" variableName="userId"/>
+		<http:request method="GET" doc:name="Reqres HTTP Requestor" doc:id="de316683-f334-48e7-b175-6cb47e17290e" url="https://reqres.in/api/users/{userId}" sendCorrelationId="AUTO">
+			<http:uri-params ><![CDATA[#[output application/java
+---
+{
+	"userId" : vars.userId
+}]]]></http:uri-params>
+		</http:request>
+		<logger level="INFO" doc:name="getUserIdFlow end Logger" doc:id="8db9611a-e19e-4c1e-a42c-7e3a3f6777e8" message="getUserId implementation flow ended"/>
+	</sub-flow>
+</mule>

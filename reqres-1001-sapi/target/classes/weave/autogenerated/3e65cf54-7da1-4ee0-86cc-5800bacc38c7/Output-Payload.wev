@@ -1,0 +1,19 @@
+%dw 2.0
+
+type auto_3e65cf54_7da1_4ee0_86cc_5800bacc38c7_Output_Payload = {
+  data: {
+    last_name: String, 
+    id: Number, 
+    avatar: String, 
+    first_name: String, 
+    email: String, 
+    _?: Any
+  }, 
+  support: {
+    text: String, 
+    url: String, 
+    _?: Any
+  }, 
+  _?: Any
+}
+
